@@ -1,0 +1,9 @@
+backend/
+node_modules
+**/node_modules
+.git
+.gitignore
+*.log
+dist
+coverage/
+build/

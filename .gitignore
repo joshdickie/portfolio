@@ -1,0 +1,12 @@
+docker-compose.override.yml
+.vscode/
+**/node_modules
+**/.env*
+**/*.log
+**/coverage/
+**/build/
+**/*.pem
+**/*.tsbuildinfo
+frontend/.next/
+frontend/out/
+frontend/next-env.d.ts
