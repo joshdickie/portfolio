@@ -5,11 +5,7 @@ date: 2025-06-21
 ---
 # Joshua Dickie
 
-Indianapolis, IN  
-[josh.dickie@live.com.au](mailto:josh.dickie@live.com.au)  
-857-565-4957  
-
-[joshdickie.com](http://www.joshdickie.com) | [gitlab.com/joshdickie](http://gitlab.com/joshdickie) | [linkedin.com/in/joshdickie](http://linkedin.com/in/joshdickie)
+[josh.dickie@live.com.au](mailto:josh.dickie@live.com.au) | [joshdickie.com](http://www.joshdickie.com) | [gitlab.com/joshdickie](http://gitlab.com/joshdickie) | [linkedin.com/in/joshdickie](http://linkedin.com/in/joshdickie)
 
 ---
 
@@ -20,8 +16,7 @@ Software engineer with 4+ years delivering production backend APIs and infrastru
 ## Work Experience
 
 ### ICT Networks Pty Ltd  
-**Systems Engineer** | *2021 - Present*
-
+#### **Systems Engineer** | *2021 - Present*
 - Designed, developed, and maintained high-availability Express-based APIs and managed service platforms for S&P/ASX200 clients across multiple industries, delivering >99.99% uptime and fault-tolerant data retention in production environments.
 - Built distributed audit logging system for multi-state ISP operation, utilising Express and MySQL to process telemetry from 80k+ concurrent ISP subscribers, handling hundreds of thousands of daily events under 99.99% uptime SLAs and complying with national metadata retention requirements.
 - Led CRM data migration, normalizing over 500k records across Salesforce, Hubspot, Mobileforce, and Freshservice, integrating SaaS platforms via custom APIs, webhooks, and backend middleware.
@@ -48,7 +43,7 @@ Software engineer with 4+ years delivering production backend APIs and infrastru
 - Developed and deployed full-stack MERN app for local miniature wargaming community, designing REST API, MongoDB schema, and React frontend to support real-time game state tracking.
 - Managed end-to-end deployment on self-hosted infrastructure using GitLab CI/CD pipelines, automated backups, and isolated DMZ network configuration.
 
----
+<div class="page-break"></div>
 
 ## Core Technologies
 
