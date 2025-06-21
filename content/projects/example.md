@@ -2,9 +2,9 @@
 title: Example Project (for testing!)
 slug: example
 date: 2025-06-21
-tags: [MERN, Backend, Full-Stack]
 summary: A super cool thing I made but can't really say too much about because really it never happened and this is just an example post.
-features: true
+tags: [MERN, Backend, Full-Stack]
+featured: true
 ---
 
 ## Overview
