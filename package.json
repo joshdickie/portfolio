@@ -1,7 +1,8 @@
 {
   "scripts": {
     "generate-resume": "tsx scripts/generate-resume-pdf.ts",
-    "seed-db": "tsx scripts/seed-db.ts"
+    "seed-db": "tsx scripts/seed-db.ts",
+    "copy-reseources": "tsk scripts/copy-resources.ts"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.34.1",
