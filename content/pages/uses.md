@@ -6,8 +6,8 @@ technologies: # TODO: add more of these, obviously
   - name: Node.js
     icon: /images/icons/nodejs.svg # TODO: update with actual path once icons are around. Under public? Whatever
     projects:
-    - Portfolio site (this one)
-    - Enterprise APIs
+      - Portfolio site (this one)
+      - Enterprise APIs
 gear:
   - Main Dev Machine: Dell Latitude, Linux
     Home Server: NUC running Ubuntu

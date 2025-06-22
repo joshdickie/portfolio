@@ -8,7 +8,7 @@ const projectSchema = new mongoose.Schema(
     summary: { type: String },
     tags: { type: [String], default: [] },
     featured: { type: Boolean, default: false },
-    content: { type: String, required: true }
+    content: { type: String, required: true },
   },
   { timestamps: true }
 );

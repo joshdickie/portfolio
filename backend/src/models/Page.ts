@@ -9,7 +9,7 @@ const pageSchema = new mongoose.Schema(
     iterables: {
       type: Map,
       of: [{ type: Map, of: String }],
-      default: {}
+      default: {},
     },
   },
   { timestamps: true }

@@ -35,8 +35,8 @@ async function copyResources(db) {
           slug,
           type,
           path: `/resources/${file}`,
-          size
-        }
+          size,
+        },
       },
       { upsert: true }
     );
@@ -60,7 +60,7 @@ async function main() {
   await client.close();
 }
 
-main().catch(err => {
+main().catch((err) => {
   console.error('❌ Copy resources failed:', err);
   process.exit(1);
 });

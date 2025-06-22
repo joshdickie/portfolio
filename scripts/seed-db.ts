@@ -8,7 +8,7 @@ const MONGO_DB_NAME = process.env.MONGO_DB_NAME || 'portfolio';
 
 async function seedPages(db) {
   const pagesDir = path.resolve('content/pages');
-  const files = fs.readdirSync(pagesDir).filter(file => file.endsWith('.md'));
+  const files = fs.readdirSync(pagesDir).filter((file) => file.endsWith('.md'));
 
   const pagesCollection = db.collection('pages');
 
@@ -26,8 +26,8 @@ async function seedPages(db) {
           slug,
           date: new Date(date),
           content,
-          iterables: rest
-        }
+          iterables: rest,
+        },
       },
       { upsert: true }
     );
@@ -38,7 +38,7 @@ async function seedPages(db) {
 
 async function seedProjects(db) {
   const projectsDir = path.resolve('content/projects');
-  const files = fs.readdirSync(projectsDir).filter(file => file.endsWith('.md'));
+  const files = fs.readdirSync(projectsDir).filter((file) => file.endsWith('.md'));
 
   const projectsCollection = db.collection('projects');
 
@@ -57,8 +57,8 @@ async function seedProjects(db) {
           summary: data.summary || '',
           tags: data.tags || [],
           featured: data.featured || false,
-          content
-        }
+          content,
+        },
       },
       { upsert: true }
     );
@@ -85,7 +85,7 @@ async function main() {
   await client.close();
 }
 
-main().catch(err => {
+main().catch((err) => {
   console.error('❌ Seed failed:', err);
   process.exit(1);
 });
