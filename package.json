@@ -3,7 +3,8 @@
   "scripts": {
     "generate-resume": "tsx scripts/generate-resume-pdf.ts",
     "seed-db": "tsx scripts/seed-db.ts",
-    "copy-resources": "tsx scripts/copy-resources.ts"
+    "copy-resources": "tsx scripts/copy-resources.ts",
+    "build-nojs": "tsx scripts/generate-nojs.ts"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
@@ -17,6 +18,7 @@
   },
   "dependencies": {
     "fs-extra": "^11.3.0",
+    "markdown-it": "^14.1.0",
     "mongodb": "^6.17.0",
     "mongoose": "^8.16.0"
   }
