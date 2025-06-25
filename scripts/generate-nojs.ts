@@ -108,13 +108,6 @@ async function main() {
   for (const page of pages) {
     await buildPage(page);
   }
-  const indexContent = {
-    slug: "index",
-    title: "Josh Dickie",
-    data: {"title": "index", "slug": "index"},
-    content: ''
-  }
-  await buildPage(indexContent);
 
   console.log('✅ No-JS pages generated.');
 }

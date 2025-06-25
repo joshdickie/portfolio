@@ -1,6 +1,6 @@
 ---
 title: About Me
-slug: about
+slug: index
 date: 2025-06-20
 ---
 
