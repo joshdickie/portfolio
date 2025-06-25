@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   mongo:
     image: mongo:6.0
@@ -24,6 +22,15 @@ services:
       - mongo
     env_file:
       - ./backend/.env
+    develop:
+      watch:
+        - path: ./backend/src
+          target: /app/backend/src
+          action: sync
+        - path: ./backend/package.json
+          action: rebuild
+        - path: ./backend/package-lock.json
+          action: rebuild
 
   frontend:
     build:
@@ -37,6 +44,18 @@ services:
       - backend
     env_file:
       - ./frontend/.env.local
+    develop:
+      watch:
+        - path: ./frontend/src
+          target: /app/frontend/src
+          action: sync
+        - path: ./frontend/public
+          target: /app/frontend/public
+          action: sync
+        - path: ./frontend/package.json
+          action: rebuild
+        - path: ./frontend/package-lock.json
+          action: rebuild
 
 volumes:
   mongo-data:
