@@ -8,26 +8,80 @@
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
       <link rel="manifest" href="/site.webmanifest">
+      <link rel="stylesheet" href="/nojs/styles.css" />
     </head>
     <body>
-      
+      <div class="page-container">
+        
     <header>
-      <h1><img src="/monogram.png" alt="Josh Dickie monogram" class="imgage/png" />Josh Dickie</h1>
-      <nav><a href="/nojs/index.html">About Me</a> | <a href="/nojs/contact.html">Contact</a> | <a href="/nojs/projects.html">Projects</a> | <a href="/nojs/resume.html">Resume</a> | <a href="/nojs/uses.html">Tools I Use</a></nav>
-      <div class="contact-icons"><a href="mailto:josh.dickie@live.com.au" target="_blank" rel="noopener noreferrer"><img src="/icons/mail.svg" alt="josh.dickie@live.com.au link icon" class="icon" /></a> <a href="https://github.com/joshdickie" target="_blank" rel="noopener noreferrer"><img src="/icons/github.svg" alt="github.com/joshdickie link icon" class="icon" /></a> <a href="https://www.linkedin.com/in/joshdickie" target="_blank" rel="noopener noreferrer"><img src="/icons/linkedin.svg" alt="linkedin.com/in/joshdickie link icon" class="icon" /></a></div>
+      <div class="header-left">
+        <img id="monogram" src="/monogram.png" alt="Josh Dickie monogram" class="image/png" />
+        <h1>Josh Dickie</h1>
+      </div>
+      <div class="header-right">
+        <nav><a href="/nojs/index.html">About Me</a> | <a href="/nojs/projects.html">Projects</a> | <a href="/nojs/resume.html">Resume</a> | <a href="/nojs/uses.html">Tools I Use</a></nav>
+        <div class="contact-icons"><a href="mailto:josh.dickie@live.com.au" target="_blank" rel="noopener noreferrer"><img src="/icons/mail.svg" alt="josh.dickie@live.com.au link icon" class="icon" /></a> <a href="https://github.com/joshdickie" target="_blank" rel="noopener noreferrer"><img src="/icons/github.svg" alt="github.com/joshdickie link icon" class="icon" /></a> <a href="https://www.linkedin.com/in/joshdickie" target="_blank" rel="noopener noreferrer"><img src="/icons/linkedin.svg" alt="linkedin.com/in/joshdickie link icon" class="icon" /></a></div>
+      </div>
     </header>
   
-      <main>
-        <div class="page-title">Resume</div>
-        <div class="page-content">
-          
-        </div>
-      </main>
-      
+        <main>
+          <div class="page-title">Resume</div>
+          <div class="page-content">
+            
+    <p><h1>Joshua Dickie</h1>
+<p><a href="mailto:josh.dickie@live.com.au">josh.dickie@live.com.au</a> | <a href="http://www.joshdickie.com">joshdickie.com</a> | <a href="http://gitlab.com/joshdickie">gitlab.com/joshdickie</a> | <a href="http://linkedin.com/in/joshdickie">linkedin.com/in/joshdickie</a></p>
+<hr>
+<p>Software engineer with 4+ years delivering production backend APIs and infrastructure automation for enterprise clients. Experience owning full-stack design, CI/CD pipelines, high-availability systems, and integrating complex SaaS platforms.</p>
+<hr>
+<h2>Work Experience</h2>
+<h3>ICT Networks Pty Ltd</h3>
+<h4><strong>Systems Engineer</strong> | <em>2021 - Present</em></h4>
+<ul>
+<li>Designed, developed, and maintained high-availability Express-based APIs and managed service platforms for S&amp;P/ASX200 clients across multiple industries, delivering &gt;99.99% uptime and fault-tolerant data retention in production environments.</li>
+<li>Built distributed audit logging system for multi-state ISP operation, utilising Express and MySQL to process telemetry from 80k+ concurrent ISP subscribers, handling hundreds of thousands of daily events under 99.99% uptime SLAs and complying with national metadata retention requirements.</li>
+<li>Led CRM data migration, normalizing over 500k records across Salesforce, Hubspot, Mobileforce, and Freshservice, integrating SaaS platforms via custom APIs, webhooks, and backend middleware.</li>
+<li>Served as technical lead on multiple projects, coordinating with product managers, stakeholders, and domain experts to ensure successful delivery.</li>
+<li>Cut deployment time from hours to minutes by automating deployment pipelines using Ansible, Docker, Gitlab CI/CD, and AWS infrastructure-as-code workflows, improving system scalability and reducing manual errors.</li>
+<li>Eliminated redundant manual workflows and automated business processes across multiple departments by delivering internal software tools in Python, Node.js, and Java/Scala.</li>
+</ul>
+<hr>
+<h2>Projects</h2>
+<h3>NSW State Emergency Service Volunteer Development</h3>
+<ul>
+<li>Iterated on MERN app for real-time GPS tracking of hundreds of thousands of dollars' worth of high-value assets used by NSW SES (State Emergency Services) in emergency response situations via Google Maps API integration.</li>
+<li>Developed Node.js accounting and auditing software to process volunteer timesheets and training hours, reducing manual data entry and eliminating recurring administrative burden across 10k+ volunteers while improving reporting accuracy.</li>
+</ul>
+<h3>NSW Farmers Carbon Credit Accounting Software</h3>
+<ul>
+<li>Developed Wordpress/PHP webapp enabling farmers to track carbon usage, optimize government incentive eligibility, and maximise carbon credit allocation.</li>
+<li>Partnered with project and community stakeholders to iterate on development and feature design in an Agile delivery model, incorporating end-user feedback into multiple release cycles.</li>
+</ul>
+<h3>KillTeam Companion - a tabletop game companion app</h3>
+<ul>
+<li>Developed and deployed full-stack MERN app for local miniature wargaming community, designing REST API, MongoDB schema, and React frontend to support real-time game state tracking.</li>
+<li>Managed end-to-end deployment on self-hosted infrastructure using GitLab CI/CD pipelines, automated backups, and isolated DMZ network configuration.</li>
+</ul>
+<div class="page-break"></div>
+<h2>Core Technologies</h2>
+<p><strong>Languages:</strong> Javascript, Node.js, Python, Java, Scala, C++, PHP, SQL, Bash, Shell, HTML, CSS<br>
+<strong>Frameworks, Packages, &amp; Libraries:</strong> Express.js, React, React Native, Vue.js, Angular, Pandas, NumPy, Django, Flask<br>
+<strong>Tools, Platforms, &amp; Systems:</strong> Linux, AWS, Elasticsearch, ELK Stack, Kibana, Logstash, MySQL, PostgreSQL, MongoDB, Ansible, Zabbix, Git, Gitlab CI/CD, Jenkins, Docker, Docker Compose, Oxidized, HAProxy, Nginx<br>
+<strong>Methodologies:</strong> Agile, Scrum, Kanban, PMBOK, CI/CD, TDD, Unit Testing, Integration Testing, Red-Green-Refactor, DevOps<br>
+<strong>Other:</strong> Data Pipelines, API Development, REST APIs, GraphQL, Webhooks, Data Warehousing, Distributed Systems, Logging &amp; Monitoring, Infrastructure Automation, Project Management, Technical Documentation</p>
+<hr>
+<h2>Education</h2>
+<p><strong>University of New England (AU)</strong><br>
+Bachelor of Computer Science - Software Development &amp; Data Science | <em>2018-2021</em></p>
+</p>
+  
+          </div>
+        </main>
+        
     <footer>
-      <p>&copy; 2025 Joshua Dickie. Icons by <a href="https://iconoir.com" target="_blank" rel="noopener noreferrer">Iconoir</a> and Emma Tusuzian</p>
+      <p>&copy; 2025 Joshua Dickie. Icons by <a href="https://iconoir.com" target="_blank" rel="noopener noreferrer">Iconoir</a>, <a href="https://simpleicons.org/" target="_blank" rel="noopener noreferrer">Simple Icons</a>, and Emma Tusuzian</p>
     </footer>
   
+      </div>
     </body>
     </html>
   

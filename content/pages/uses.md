@@ -22,4 +22,4 @@ certifications:
     icon: /images/icons/best-guy-award.svg
 ---
 
-Here's a quick look at the tools I use day-to-day, from backend tech to desk setup. If you have any recommendations, especially for terminal tools or fun/useful extensions, [get in touch!](/contact) I'd love to hear all about it.
+Here's a quick look at the tools I use day-to-day, from backend tech to desk setup. If you have any recommendations, especially for terminal tools or fun/useful extensions, get in touch! I'd love to hear all about it.
