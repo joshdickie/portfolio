@@ -8,19 +8,23 @@ const MONGO_DB_NAME = process.env.MONGO_DB_NAME || 'portfolio';
 
 async function copyResources(db) {
   const srcDir = path.resolve('content/resources');
-  const destDir = path.resolve('backend/public/resources');
-  fs.mkdirSync(destDir, { recursive: true });
+  const backedDestDir = path.resolve('backend/public/resources');
+  const frontendDestDir = path.resolve('frontend/public/resources');
+  fs.mkdirSync(backedDestDir, { recursive: true });
+  fs.mkdirSync(frontendDestDir, { recursive: true });
   const files = fs.readdirSync(srcDir);
   const resourcesCollection = db.collection('resources');
 
-  console.log(`Copying resources from ${srcDir} to ${destDir}...`);
+  console.log(`Copying resources from ${srcDir} to ${backedDestDir} and ${frontendDestDir}...`);
 
   for (const file of files) {
     const srcPath = path.join(srcDir, file);
-    const destPath = path.join(destDir, file);
+    const backedDestPath = path.join(backedDestDir, file);
+    const frontedDestPath = path.join(frontendDestDir, file);
 
-    // Copy file to backend dir
-    fse.copySync(srcPath, destPath);
+    // Copy files
+    fse.copySync(srcPath, backedDestPath);
+    fse.copySync(srcPath, frontedDestPath);
 
     const slug = path.parse(file).name;
     const type = path.extname(file).slice(1).toLowerCase();

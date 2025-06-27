@@ -1,4 +1,4 @@
-import fs from 'fs';
+import fs, { mkdirSync } from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import markdownIt from 'markdown-it';
@@ -152,7 +152,7 @@ function buildProjectsBody(page: { slug: string; title: string; data: { [key: st
   const featuredProjectsGrid = `
     <div class="projects-grid">
       ${featuredProjects.map((project) => `
-          <a href="/nojs/projects/${project.slug}.html" class="project-card" style="background-image: url('/img/${project.thumbnail}')">
+          <a href="/nojs/projects/${project.slug}.html" class="project-card" style="background-image: url('/img/project-thumbnails/${project.thumbnail}')">
             <div class="project-card-overlay">
               <h3>${project.title}</h3>
               <p>${project.summary}</p>
@@ -193,6 +193,27 @@ function buildProjectsBody(page: { slug: string; title: string; data: { [key: st
   return '';
 }
 
+function buildResumeBody(page) {
+  const renderedContent = md.render(page.content);
+  return `
+    <div id="resume-wrapper">
+      <div id="resume-head">
+        <a href="/resources/resume.pdf" download class="resume-button">
+          <img src="/icons/download.svg" alt="Download icon" class="icon" />
+          Download PDF
+        </a>
+        <a href="/resources/resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-button">
+          <img src="/icons/page.svg" alt="View icon" class="icon" />
+          View in Browser
+        </a>
+      </div>
+      <div id="resume-content">
+        ${renderedContent}
+      </div
+    </div>
+  `;
+}
+
 function buildGenericBody(page: { slug: string; title: string; data: { [key: string]: any; }; content: string }) {
   const renderedContent = md.render(page.content);
   return `<div>${renderedContent}</div>`;
@@ -205,6 +226,8 @@ function buildPageBody(page: { slug: string; title: string; data: { [key: string
       return buildAboutBody(page);
     case 'projects':
       return buildProjectsBody(page);
+    case 'resume':
+      return buildResumeBody(page);
     default:
       return buildGenericBody(page);
   }
