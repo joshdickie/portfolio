@@ -195,9 +195,7 @@ function buildProjectsBody(page: { slug: string; title: string; data: { [key: st
 
 function buildGenericBody(page: { slug: string; title: string; data: { [key: string]: any; }; content: string }) {
   const renderedContent = md.render(page.content);
-  return `
-    <p>${renderedContent}</p>
-  `;
+  return `<div>${renderedContent}</div>`;
 }
 
 function buildPageBody(page: { slug: string; title: string; data: { [key: string]: any; }; content: string }) {
@@ -225,7 +223,9 @@ async function buildPage(page: { slug: string; title: string; data: { [key: stri
 }
 
 function buildProjectPageBody(project: { slug: string; title: string; thumbnail: string; summary: string; tags: [string]; featured: boolean; content: string }) {
-  return '';
+  const renderedContent = md.render(project.content)
+  return `<div>${renderedContent}</div>`;
+
 }
 
 async function buildProjectPage(project: { slug: string; title: string; thumbnail: string; summary: string; tags: [string]; featured: boolean; content: string }) {
